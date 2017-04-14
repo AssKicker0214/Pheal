@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+
+    <link href="../../bootstrap.min.css" rel="stylesheet">
+    <link href="LoginStyleSheet.css" rel="stylesheet">
+    <title>登录</title>
+</head>
+<body>
+
+
+<div id="LoginJumbotron" class="jumbotron">
+    <h2 id="HelloH2">Hello, I am <strong>XXX</strong></h2>
+    <h3 class="WhiteCenterText">Your personal healthcare companion</h3>
+
+    <div class="container" align="center">
+        <a class="GhostBtn" type="button" href="RegisterPage.html" >
+
+            <span style="color: white">
+                Sign up
+            </span>
+
+        </a>
+    </div>
+
+    <span class="glyphicon glyphicon-apple"></span>
+
+
+
+    <!-- Ajax-->
+    <div id="LoginBar" class="container">
+            <div class="row">
+                <form id="loginForm" method="post" action="http://localhost:63342/Pheal/businesslogic/userbl/CheckLoginPHP.php5">
+
+
+                <div class="col-lg-4">
+                    <div id="UserID" class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                        <input type="text" id="_id" name="userid" class="form-control" placeholder="id" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+                </form>
+
+                <div class="col-lg-4">
+                    <div id="UserPassword" class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-lock"></span>
+                        </span>
+                        <input type="password" id="_password" name="userpassword" class="form-control" placeholder="password" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button class="btn btn-success" onclick="check()">
+                                &nbsp;&nbsp;&nbsp;&nbsp;登录&nbsp;&nbsp;&nbsp;&nbsp;
+                            </button>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <button class="btn btn-default" >
+                                注册
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+    <script>
+        <!--
+        function check(){
+//            alert("loging in");
+            var inputId = document.getElementById('_id').value;
+            var inputPassword = document.getElementById('_password').value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://localhost:63342/Pheal/businesslogic/userbl/CheckLoginPHP.php5', true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send("id="+inputId+"&password="+inputPassword);
+            xhr.onreadystatechange = function(e){
+                if(xhr.readyState === 4 && xhr.status === 200){
+                    var result = xhr.responseText;
+                    if(result == 'succeeded'){
+                        alert("in");
+                        window.location.href = "../PersonalIndex/PersonalIndexPHP.php5";
+//                        window.location.href = "../PersonalIndex/test.php5";
+                    }else{
+                        alert(result);
+                    }
+                }
+            }
+        }
+
+
+
+        //-->
+    </script>
+</div>
+
+</body>
+</html>

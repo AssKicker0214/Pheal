@@ -1,0 +1,69 @@
+
+
+.navbtn{
+    border-collapse: collapse;
+    border-width: 0px;
+    height: 40px;
+    text-align: left;
+    color: #3c763d;
+    border-radius: 5px;
+    background-color: transparent;
+}
+/*.navbtn:focus{*/
+    /*color: #00e100;*/
+
+/*}*/
+
+.navbtn:hover{
+    background-color: #46b8da;
+}
+
+#myinfodiv{
+    /*background-color: #46b8da;*/
+}
+
+.content{
+    margin-right: 0px;
+    width: inherit;
+}
+
+
+
+#homePanel{
+    background-color: red;
+}
+
+#healthPanel{
+    background-color: green;
+    visibility: hidden;
+}
+
+#activityPanel{
+    background-color: purple;
+    visibility: hidden;
+}
+
+#caresPanel{
+    background-color: orange;
+    visibility: hidden;
+}
+
+#myinfoPanel{
+    background-color: gray;
+    visibility: hidden;
+}
+
+.client-list{
+    padding-left: 10%;
+    padding-right: 30%;
+}
+
+.at-right{
+    float: right;
+}
+
+#message-container{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 15%;
+}

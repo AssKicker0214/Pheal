@@ -1,0 +1,29 @@
+/*#sleep-stage-table{*/
+    /*margin-left: 10%;*/
+    /*margin-right: 12%;*/
+/*}*/
+
+.area{
+    padding-top: 20px;;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.dark-area{
+    background-color: #009966;
+}
+
+.light-area{
+    background-color: #33CC99;
+}
+
+.figure-em{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.row>.col-lg-8{
+    padding-left: 100px;
+}

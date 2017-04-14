@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../../bootstrap.min.css" rel="stylesheet">
+    <link href="RegisterStylesheet.css" rel="stylesheet">
+</head>
+<body>
+register
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form id="register_form" method="post" action="../../businesslogic/userbl/RegisterPHP.php5">
+                <div class="form-group">
+                    <span><label for="id">ID </label></span>
+                    <input id="id" name="id" class="form-control" onblur="checkID();checkSubmit();" type="text" placeholder="用户名">
+                    <span id="non_id_error" class="alert-danger">请输入用户名</span>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" class="form-control" type="password" onblur="checkPassword();checkSubmit();" placeholder="Input password">
+                    <span id="non_password_error" class="alert-danger">请输入密码,长度在6位以上</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="repeatPassword">Password</label>
+                    <input id="repeatPassword" class="form-control" onblur="checkRepeat();checkSubmit();" type="password" placeholder="Repeat password">
+                    <span id="repeat_password_error" class="alert-danger">两次输入的密码不一致</span>
+                </div>
+
+                    <button type="submit" id="submit_button" name="submitButton" class="btn btn-success">提交</button>
+
+            </form>
+        </div>
+
+
+        <script>
+            <!--
+            var idValid = false;
+            var passwordValid = false;
+            var repeatValid = false;
+            function checkID(){
+                var id = document.getElementById('id').value;
+                if(id == ""){
+                    document.getElementById("non_id_error").style.visibility="visible";
+                    idValid = false;
+                }else{
+                    document.getElementById("non_id_error").style.visibility="Hidden";
+                    idValid = true;
+
+                }
+            }
+
+
+            function checkPassword(){
+                var password = document.getElementById('password').value;
+                if(password == ""){
+                    document.getElementById("non_password_error").style.visibility="visible";
+                    passwordValid = false;
+                }else{
+                    document.getElementById("non_password_error").style.visibility="Hidden";
+                    passwordValid = true;
+                }
+
+                if(!document.getElementById('repeatPassword').value==''){
+                    checkRepeat();
+                }
+            }
+
+            function checkRepeat(){
+                var rePassword = document.getElementById('repeatPassword').value;
+                var password = document.getElementById('password').value;
+                if(rePassword != password || rePassword == ''){
+                    document.getElementById("repeat_password_error").style.visibility="visible";
+                    repeatValid = false;
+                }else{
+                    document.getElementById("repeat_password_error").style.visibility="Hidden";
+                    repeatValid = true;
+
+                }
+            }
+
+
+            function checkSubmit(){
+                if(idValid && passwordValid && repeatValid){
+                    document.getElementById('submit_button').style.visibility="visible";
+
+                }else{
+                    document.getElementById('submit_button').style.visibility="hidden";
+                }
+
+            }
+            //-->
+        </script>
+
+        <div class="col-lg-2">
+            <hr style="height: 400px; width: 10px"/>
+        </div>
+
+        <div class="col-lg-4">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

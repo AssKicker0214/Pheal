@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<health>
+<daily date="2015-11-13">
+	<excercise>
+		<walk start-time="14:00" duration="100" distance="1630"></walk>
+	</excercise>
+
+	<sleep start-time="22:50" end-time="8:30">
+		<stage>
+		<first>22:50</first>
+		<second>22:57</second>
+		<third>23:15</third>
+		<forth>23:40</forth>
+		<third>0:02</third>
+		<second>0:27</second>
+		<rem>0:43</rem>
+
+		<second>1:00</second>
+		<third>1:26</third>
+		<forth>1:40</forth>
+		<third>2:03</third>
+		<second>2:20</second>
+		<rem>2:50</rem>
+
+		<second>3:14</second>
+		<third>3:31</third>
+		<forth>4:05</forth>
+		<third>3:31</third>
+		<second>3:54</second>
+		<rem>4:12</rem>
+
+		<second>4:34</second>
+		<third>4:51</third>
+		<forth>5:05</forth>
+		<third>5:31</third>
+		<second>6:04</second>
+		<rem>6:19</rem>
+		
+		<second>6:42</second>
+		<third>6:59</third>
+		<forth>7:18</forth>
+		<third>7:39</third>
+		<second>7:52</second>
+		<rem>8:05</rem>
+		</stage>
+		<snore start-time="0:22" end-time="3:09" decibel="60">
+			
+		</snore>
+	</sleep>
+</daily>
+
+</health>

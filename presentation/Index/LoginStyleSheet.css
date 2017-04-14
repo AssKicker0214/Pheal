@@ -1,0 +1,51 @@
+body{
+    /*font-family: "glyphicons-halflings";*/
+}
+
+#LoginJumbotron{
+    background-color: #00e100;
+    min-height: 500px;
+}
+
+.WhiteCenterText{
+    text-align: center;
+    color: white;
+}
+
+#HelloH2{
+    font-size: 66px;
+    padding-top: 50px;
+    text-align: center;;
+    color: white;
+}
+
+#LoginBar{
+    padding-left: 10%;
+    padding-right: 4%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.GhostBtn{
+    align-self: center;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-weight: 100;
+    /*font-family: cursive;*/
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+}
+
+.GhostBtn:hover{
+    background-color: rgba(200, 200, 200, 0.3);
+    text-decoration: none;
+}

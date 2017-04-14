@@ -1,0 +1,16 @@
+.form-group{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#non_password_error,#non_id_error,#repeat_password_error{
+    visibility: hidden;
+}
+
+#submit_button{
+    visibility: hidden;
+    align-self: center;
+    margin-left: 100px;
+}

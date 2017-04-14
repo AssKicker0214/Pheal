@@ -1,0 +1,38 @@
+/*#head{*/
+    /*position: fixed;*/
+/*}*/
+
+#apply-now-btn{
+
+}
+
+.participant-list{
+    width: 700px;
+    margin: 0 auto;
+
+}
+
+.activity-main-part{
+    padding-left: 15%;
+}
+
+#activity-list{
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+
+/*.list-group-item{*/
+    /*padding-left: 10%;*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 0px;*/
+/*}*/
+
+/*.down{*/
+    /*position: absolute;*/
+    /*top: 30px;*/
+/*}*/
+
+/*.col-sm-6{*/
+    /*padding-left: 20%;*/
+/*}*/

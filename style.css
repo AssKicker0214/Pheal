@@ -1,0 +1,18 @@
+.jumbotron{
+    background-color: rgba(200, 200, 200, 0.4);
+    height: 800px;
+}
+
+#helloh1{
+    padding-top: 100px;
+}
+
+#rowid{
+    background-color: rgba(200, 200, 200, 0.7);
+}
+
+body{
+
+    background-image: url("windows.jpg");
+    background-position: center center;
+}

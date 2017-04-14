@@ -1,0 +1,21 @@
+#admin-login-frame{
+    margin-top: 10%;
+    width: 400px;
+    align-self: center;
+}
+
+#login-btn{
+    display: block;
+    margin: 5% auto;
+}
+
+#activity-publish-form{
+    width: 40%;
+    position: fixed;
+    margin-left: 10px;
+
+}
+
+.textarea{
+    min-height: 400px;
+}

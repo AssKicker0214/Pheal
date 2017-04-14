@@ -1,0 +1,14 @@
+.img-block{
+    display: block;
+    margin: 0 auto;
+}
+
+#upload-btn{
+    width: 200px;
+}
+
+.social-btn{
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
